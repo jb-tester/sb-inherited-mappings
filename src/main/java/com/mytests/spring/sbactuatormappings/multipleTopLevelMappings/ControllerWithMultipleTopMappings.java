@@ -1,14 +1,14 @@
-package com.mytests.spring.sbactuatormappings;
+package com.mytests.spring.sbactuatormappings.multipleTopLevelMappings;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/foo")
-public class MyController {
+@RequestMapping({"/aaa","bbb"})
+public class ControllerWithMultipleTopMappings {
 
+    // "/bbb" prefix is ignored in the generated OpenAPI draft
     @GetMapping()
     public String test0() {
         return "test0";
@@ -18,8 +18,8 @@ public class MyController {
         return "test1";
     }
 
-    @GetMapping("/foo/test2")
+    @GetMapping({"/test2","/test3"})
     public String fooTest2() {
-        return "foo/test2";
+        return "test2, test3";
     }
 }
