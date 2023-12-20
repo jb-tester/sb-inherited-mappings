@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 // class-level OpenAPI draft doesn't include mappings
 @RestController
 @RequestMapping("/ownTopTwo")
-public class SecondControllerWithInheritedMappingMethods implements NotAnnotatedParentWithMappings {
+public class SecondControllerWithInheritedMappingMethods implements NotAnnotatedParentWithMappingsOne, NotAnnotatedParentWithMappingsTwo {
     @Override
     public String test1() {
         return "parentTest1";

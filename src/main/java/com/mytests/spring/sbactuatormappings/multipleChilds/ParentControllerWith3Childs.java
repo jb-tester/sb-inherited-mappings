@@ -2,10 +2,11 @@ package com.mytests.spring.sbactuatormappings.multipleChilds;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
-public abstract class ParentControllerWith3Childs {
+public class ParentControllerWith3Childs {
 
-    @RequestMapping("/parentMapping")
+    @RequestMapping({"/parentMapping"})
     public String parent(){
         return "parent";
     }
+
 }
