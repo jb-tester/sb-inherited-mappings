@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/grandson/first")
-public class ChildControllerOne extends FirstParentControllerWithGrandParentsAndChilds {
+@RequestMapping("/grandson/third")
+public class ChildControllerThree extends SecondParentControllerWithGrandParentsAndChilds {
 
-    @GetMapping("/firstChildOwn")
-    public String ch1(){
-        return "first child";
+    @GetMapping("/thirdChildOwn")
+    public String ch3(){
+        return "third child";
     }
 }

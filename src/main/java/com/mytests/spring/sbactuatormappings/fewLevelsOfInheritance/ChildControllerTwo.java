@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/grandson/second")
-public class ChildControllerTwo extends ParentControllerWithGrandParentsAndChilds {
+public class ChildControllerTwo extends FirstParentControllerWithGrandParentsAndChilds {
 
     @GetMapping("/secondChildOwn")
     public String ch1(){
