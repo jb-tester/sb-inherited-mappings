@@ -1,12 +1,13 @@
 # Spring MVC:  type-level request mapping of controller base class is not considered
-https://youtrack.jetbrains.com/issue/IDEA-248534
+[IDEA-248534](https://youtrack.jetbrains.com/issue/IDEA-248534)
 
 ![](img.png)
 
 the HTTP Request is generated incorrectly also
 
-See `com.mytests.spring.sbactuatormappings.parentInterfaceWithTopLevelMapping` package
-See also `com.mytests.spring.sbactuatormappings.fewLevelsOfInheritanceWithTopLevelMappings` for multiple inheritance levels
+#### See `com.mytests.spring.sbactuatormappings.parentInterfaceWithTopLevelMapping` package
+#### See also `com.mytests.spring.sbactuatormappings.fewLevelsOfInheritanceWithTopLevelMappings` for multiple inheritance levels
+
 ## Same - for the inherited multiple class-level mappings:
 
  **expected**: 
@@ -17,7 +18,7 @@ See also `com.mytests.spring.sbactuatormappings.fewLevelsOfInheritanceWithTopLev
  **actual**: 
   - just `/test1` everywhere, both prefixes are ignored everywhere
 
-See `com.mytests.spring.sbactuatormappings.parentInterfaceWithTopLevelMapping` package
+#### See `com.mytests.spring.sbactuatormappings.parentInterfaceWithTopLevelMapping` package
  
 # Multiple top-level mappings: OpenAPI draft is generated incorrectly
 
