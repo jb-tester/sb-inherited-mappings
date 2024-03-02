@@ -5,6 +5,8 @@ https://youtrack.jetbrains.com/issue/IDEA-248534
 
 the HTTP Request is generated incorrectly also
 
+See `com.mytests.spring.sbactuatormappings.parentInterfaceWithTopLevelMapping` package
+See also `com.mytests.spring.sbactuatormappings.fewLevelsOfInheritanceWithTopLevelMappings` for multiple inheritance levels
 ## Same - for the inherited multiple class-level mappings:
 
  **expected**: 
@@ -15,6 +17,8 @@ the HTTP Request is generated incorrectly also
  **actual**: 
   - just `/test1` everywhere, both prefixes are ignored everywhere
 
+See `com.mytests.spring.sbactuatormappings.parentInterfaceWithTopLevelMapping` package
+ 
 # Multiple top-level mappings: OpenAPI draft is generated incorrectly
 
 HTTP Request is generated correctly, and Endpoints view displays the correct paths, but
